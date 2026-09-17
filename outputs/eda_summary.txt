@@ -1,0 +1,8 @@
+Brand: AppleSupport
+Total pairs: 106646
+Median response time (s): 4258
+Pct multi-turn (has prior context): 7.9%
+Pct with customer follow-up: 29.4%
+Follow-up looks thankful (heuristic): 17.2%
+Follow-up looks unresolved (heuristic): 8.6%
+Top tokens: phone, iphone, ios, update, https, fix, have, not, why, all, when, new, battery, what, now, just, help, has, get, since, how, still, app, like, time

@@ -1,0 +1,12 @@
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+matplotlib>=3.7
+tqdm>=4.65
+pyarrow>=14.0   # required for to_parquet/read_parquet
+python-dotenv>=1.0   # loads API keys from .env instead of setting env vars every terminal session
+anthropic>=0.40   # only needed if using LLM_PROVIDER=anthropic
+google-genai>=0.1   # only needed if using LLM_PROVIDER=gemini
+
+# Optional — only needed if you switch cluster_intents.py to embedding mode
+# sentence-transformers>=2.2

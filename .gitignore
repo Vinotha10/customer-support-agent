@@ -1,0 +1,33 @@
+# environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# raw and intermediate data -- large, regeneratable via src/data_prep.py.
+# NEVER commit the raw Kaggle file (~350MB).
+data/raw/*.csv
+data/processed/*.parquet
+data/processed/*.csv
+
+# trained model binaries -- regeneratable via baseline_classifiers.py /
+# cluster_intents.py, and can be large. Not needed to review the results.
+outputs/eval/*.joblib
+outputs/clusters/*.joblib
+
+# intermediate clustering output used only during manual taxonomy naming --
+# the RESULT of that work (intent_taxonomy_mapping.csv) is committed below,
+# this raw sample dump is not.
+outputs/clusters/cluster_samples.csv
+
+# Keep everything else in outputs/ -- these ARE the deliverables:
+#   outputs/clusters/intent_taxonomy_mapping.csv   (hand-named taxonomy)
+#   outputs/golden_set/*.csv                        (the 200-row golden set + calibration)
+#   outputs/eval/*.csv, *.txt                       (predictions, metrics, judge scores)
+#   outputs/figures/*.png                           (EDA charts)
+#   outputs/eval/day3_failure_analysis_notes.md
+
+# keep fixture data used by tests
+!tests/fixtures/*.csv

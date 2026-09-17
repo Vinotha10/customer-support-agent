@@ -1,0 +1,19 @@
+correctness:
+  Spearman rho: 0.406 (p=0.044)
+  % within 1 point: 76.0%
+  mean absolute difference: 1.12
+
+tone:
+  Spearman rho: 0.815 (p=0.000)
+  % within 1 point: 88.0%
+  mean absolute difference: 0.84
+
+actionability:
+  Spearman rho: 0.338 (p=0.098)
+  % within 1 point: 64.0%
+  mean absolute difference: 1.16
+
+overall (mean of all 3 dimensions):
+  Spearman rho: 0.614 (p=0.001)
+  % within 1 point: 64.0%
+  n = 25
