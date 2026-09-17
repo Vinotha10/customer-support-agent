@@ -31,3 +31,6 @@ outputs/clusters/cluster_samples.csv
 
 # keep fixture data used by tests
 !tests/fixtures/*.csv
+
+# large archive files
+*.zip
